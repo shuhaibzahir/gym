@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym & Fitness</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li><a href="" onclick="toggleMenu();">Contact</a></li>
+        <li><a href="" onclick="toggleMenu();">Home</a></li>
+        <li><a href="" onclick="toggleMenu();">about</a></li>
+        <li><a href="" onclick="toggleMenu();">Portifolio</a></li>
+        <div class="close" onclick="toggleMenu();"></div>
+      </ul>
+    </div>
+    <section class="banner">
+      <header>
+        <h1 class="logo">Your Logo</h1>
+        <div class="mode" onclick="colorChange();"></div>
+        <div class="toggle" onclick="toggleMenu();"></div>
+      </header>
+      <video src="./graphics/video.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text-div">
+        <h2>Be strong</h2>
+        <h3>never give up</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <a href="">join us</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href=""><img src="./graphics/facebook.png" alt="" /></a>
+          <a href=""><img src="./graphics/instagram.png" alt="" /></a>
+          <a href=""><img src="./graphics/twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <script>
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var bannerActive = document.querySelector(".banner");
+        menuToggle.classList.toggle("active");
+        bannerActive.classList.toggle("active");
+      }
+      function colorChange() {
+        var selectColor = document.querySelector(".mode");
+        var overlay = document.querySelector(".overlay");
+        selectColor.classList.toggle("active");
+        overlay.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
