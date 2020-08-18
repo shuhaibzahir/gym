@@ -183,9 +183,11 @@ section video {
   cursor: pointer;
 }
 @media (max-width: 991px) {
-  section,
-  section header {
+  section{
     padding: 40px;
+  }
+  section header{
+    padding: 40px 30px;
   }
   .text-div h2 {
     font-size: 3em;
